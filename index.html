@@ -43,79 +43,28 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">MoDex: Planning High-Dimensional Dexterous Control via Modelling
-            Hand with Neural Networks</h1>
+            Hands with Neural Networks</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://tongwu19.github.io/">Tong Wu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://ssr-group.net/">Wenbo Ding</a><sup>1</sup></span>
-            <!-- <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
+              <a href="">Shoujie Li</a><sup>1#</sup></span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span> -->
+              <a href="https://ssr-group.net/">Wenbo Ding</a><sup>1#</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Tsinghua University</span>
-            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>#</sup>Corresponding author</span>
           </div>
 
           <div class="column has-text-centered">
@@ -139,16 +88,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/wut19/MoDex"
@@ -159,16 +98,7 @@
                   <span>Code (coming soon)</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div> -->
+            </div>
 
           </div>
         </div>
@@ -205,7 +135,7 @@
             perform dexterous tasks using their hands. In this paper, we
             draw inspiration from the ontological cognition of biological
             organisms and reconsider dexterous hands as learnable systems.
-            Specifically, we introduce MoDex, a framework that employs a
+            Specifically, we introduce <strong>MoDex</strong>, a framework that employs a
             neural internal model to capture the dynamics characteristics
             of hand movements. Leveraging this model, we propose a bidirectional planning method that demonstrates efficiency in both
             training and inference. Furthermore, we integrate our approach
@@ -247,13 +177,72 @@
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-
-
+  <div class="columns is-centered">
+    <h2 class="title is-3">Main Results</h2>
   </div>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">Hand Tips Reach</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="./static/images/reach_tab1.png" alt="Quasi-static setting">
+        <h5 class="title is-6 has-text-centered">Quasi-static Setting</h5>
+      </div>
+      <div class="column">
+        <img src="./static/images/reach_tab2.png" alt="Sequential setting">
+        <h5 class="title is-6 has-text-centered">Sequential Setting</h5>
+      </div>
+    </div>
+    <h4 class="title is-5">Quasi-static</h4>
+    <div class="columns">
+      <div class="column">
+        <img src="./static/images/gifs/qs_1.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_2.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_3.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_4.gif" alt="">
+      </div>
+    </div>
+    <h4 class="title is-5">Sequential</h4>
+    <div class="columns">
+      <div class="column">
+        <img src="./static/images/gifs/qs_1.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_2.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_3.gif" alt="">
+      </div>
+      <div class="column">
+        <img src="./static/images/gifs/qs_4.gif" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">Gesture Generation</h3>
+    
+    <div class="columns is-centered">
+      <div class="column">
+        <img src="./static/images/gestures.png" alt="gestures" style="width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+    <h5 class="title is-6 has-text-centered">Generated Gestures</h5>
+  </div>
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">Object Orientation</h3>
+    <img src="./static/images/in_hand.png" alt="Object orienration">
+    <h5 class="title is-6 has-text-centered">Object Orientation Tasks</h5>
+  </div>
+
 </section>
 
 
